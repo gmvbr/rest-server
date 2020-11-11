@@ -1,0 +1,26 @@
+{
+  "ts-node": {
+    "compiler": "ttypescript"
+  },
+  "extends": "../node_modules/gts/tsconfig-google.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@test/*": [
+        "./*"
+      ],
+      "@core/*": [
+        "../src/core/*"
+      ],
+      "@main": [
+        "../src/index"
+      ],
+    },
+    "plugins": [
+      {
+        "transform": "typescript-transform-paths",
+        "afterDeclarations": true
+      }
+    ],
+  },
+}

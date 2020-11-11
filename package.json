@@ -1,0 +1,50 @@
+{
+  "name": "template-plugin-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "compile": "ttsc",
+    "fix": "gts fix",
+    "prepare": "npm run compile",
+    "pretest": "npm run compile",
+    "mocha": "mocha --require ts-node/register -r tsconfig-paths/register 'test/**/*.test.ts'",
+    "test": "nyc --reporter=lcov --reporter=text-summary npm run mocha",
+    "posttest": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gmvbr/template-plugin-ts.git"
+  },
+  "files": [
+    "lib/"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gmvbr/template-plugin-ts/issues"
+  },
+  "homepage": "https://github.com/gmvbr/template-plugin-ts#readme",
+  "devDependencies": {
+    "@types/chai": "^4.2.14",
+    "@types/mocha": "^8.0.3",
+    "@types/node": "^14.14.6",
+    "chai": "^4.2.0",
+    "fastify": "^3.7.0",
+    "gts": "^3.0.2",
+    "mocha": "^8.2.1",
+    "nyc": "^15.1.0",
+    "ts-node": "^9.0.0",
+    "tsconfig-paths": "^3.9.0",
+    "ttypescript": "^1.5.12",
+    "typescript": "^4.0.5",
+    "typescript-transform-paths": "^2.0.2"
+  },
+  "dependencies": {
+    "fastify-plugin": "^3.0.0"
+  }
+}
