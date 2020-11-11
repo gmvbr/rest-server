@@ -1,9 +1,12 @@
 {
-  "name": "template-plugin-ts",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@gmvbr/rest-server",
+  "version": "0.0.1",
+  "description": "rest server",
   "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "types": "lib/index.d.ts", 
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "lint": "gts lint",
     "clean": "gts clean",
@@ -30,21 +33,36 @@
   },
   "homepage": "https://github.com/gmvbr/template-plugin-ts#readme",
   "devDependencies": {
+    "@types/bcrypt": "^3.0.0",
+    "@types/busboy": "^0.2.3",
     "@types/chai": "^4.2.14",
     "@types/mocha": "^8.0.3",
+    "@types/mongodb": "^3.5.33",
     "@types/node": "^14.14.6",
     "chai": "^4.2.0",
-    "fastify": "^3.7.0",
+    "fastify": "^3.8.0",
     "gts": "^3.0.2",
+    "helmet": "^4.2.0",
     "mocha": "^8.2.1",
     "nyc": "^15.1.0",
     "ts-node": "^9.0.0",
-    "tsconfig-paths": "^3.9.0",
-    "ttypescript": "^1.5.12",
-    "typescript": "^4.0.5",
-    "typescript-transform-paths": "^2.0.2"
+    "typescript": "^4.0.5"
   },
   "dependencies": {
-    "fastify-plugin": "^3.0.0"
+    "ajv": "^6.12.6",
+    "bcrypt": "^5.0.0",
+    "env-schema": "^2.0.1",
+    "fastify-auth": "^1.0.1",
+    "fastify-autoload": "^3.3.1",
+    "fastify-cors": "^4.1.0",
+    "fastify-formbody": "^5.0.0",
+    "fastify-helmet": "^5.0.3",
+    "fastify-jwt": "^2.1.3",
+    "fastify-mongodb": "^2.0.1",
+    "fastify-multipart": "^3.3.0",
+    "fastify-plugin": "^3.0.0",
+    "fastify-sensible": "^3.0.1",
+    "fastify-static": "^3.3.0",
+    "reflect-metadata": "^0.1.13"
   }
 }
