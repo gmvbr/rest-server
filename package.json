@@ -10,7 +10,7 @@
   "scripts": {
     "lint": "gts lint",
     "clean": "gts clean",
-    "compile": "ttsc",
+    "compile": "tsc",
     "fix": "gts fix",
     "prepare": "npm run compile",
     "pretest": "npm run compile",
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gmvbr/template-plugin-ts.git"
+    "url": "git+https://github.com/gmvbr/rest-server.git"
   },
   "files": [
     "lib/"
@@ -29,9 +29,9 @@
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gmvbr/template-plugin-ts/issues"
+    "url": "https://github.com/gmvbr/rest-server/issues"
   },
-  "homepage": "https://github.com/gmvbr/template-plugin-ts#readme",
+  "homepage": "https://github.com/gmvbr/rest-server#readme",
   "devDependencies": {
     "@types/bcrypt": "^3.0.0",
     "@types/busboy": "^0.2.3",
